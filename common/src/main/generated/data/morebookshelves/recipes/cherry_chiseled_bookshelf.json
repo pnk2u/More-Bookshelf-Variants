@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "minecraft:cherry_planks"
+    },
+    "S": {
+      "item": "minecraft:cherry_slab"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "SSS",
+    "PPP"
+  ],
+  "result": {
+    "item": "morebookshelves:cherry_chiseled_bookshelf"
+  },
+  "show_notification": true
+}

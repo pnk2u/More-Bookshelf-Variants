@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/chiseled_bookshelf_inventory",
+  "textures": {
+    "front": "morebookshelves:block/mangrove_chiseled_bookshelf_empty",
+    "particle": "morebookshelves:block/mangrove_chiseled_bookshelf_top",
+    "side": "morebookshelves:block/mangrove_chiseled_bookshelf_side",
+    "top": "morebookshelves:block/mangrove_chiseled_bookshelf_top"
+  }
+}

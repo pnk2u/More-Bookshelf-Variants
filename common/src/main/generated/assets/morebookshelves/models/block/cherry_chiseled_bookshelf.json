@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/chiseled_bookshelf",
+  "textures": {
+    "particle": "morebookshelves:block/cherry_chiseled_bookshelf_top",
+    "side": "morebookshelves:block/cherry_chiseled_bookshelf_side",
+    "top": "morebookshelves:block/cherry_chiseled_bookshelf_top"
+  }
+}

@@ -19,7 +19,7 @@
 			"dev.cynthia.mods.mbv.MoreBookshelvesVariantsFabric"
 		],
 		"fabric-datagen": [
-			"dev.cynthia.mods.mbv.datagen.BookshelfDataGenerator"
+			"dev.cynthia.mods.mbv.datagen.DatagenEntrypoint"
 		]
 	},
 	"mixins": [

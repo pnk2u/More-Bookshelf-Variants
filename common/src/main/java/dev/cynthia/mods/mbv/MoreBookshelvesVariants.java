@@ -10,13 +10,15 @@
 package dev.cynthia.mods.mbv;
 
 import dev.cynthia.mods.mbv.core.Bookshelves;
-import dev.cynthia.mods.mbv.mixin.InvokerFireBlock;
+import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
+import dev.cynthia.mods.mbv.mixin.FireBlockInvoker;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
+import net.minecraft.world.level.block.entity.BlockEntity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -28,22 +30,24 @@ public class MoreBookshelvesVariants {
 
 	public void initBlocks() {
 		registerBlocksFromMap(Bookshelves.BOOKSHELVES);
+		registerBlocksFromMap(ChiseledBookshelves.CHISELED_BOOKSHELVES);
 
 		// Make things flammable
 		registerFlammableBlocks();
 	}
 
-
 	public void initItems() {
 		registerItemsFromMap(Bookshelves.BOOKSHELVES);
+		registerItemsFromMap(ChiseledBookshelves.CHISELED_BOOKSHELVES);
 	}
 
 	private void registerFlammableBlocks() {
 		FireBlock fireBlock = (FireBlock) Blocks.FIRE;
 
 		for (Block block : Bookshelves.BOOKSHELVES.values()) {
-			// TODO: should warped/crimson bookshelves be flammable??
-			((InvokerFireBlock) fireBlock).callSetFlammable(block, 30, 20);
+			if (!Bookshelves.FIREPROOF_BOOKSHELVES.contains(block)) {
+				((FireBlockInvoker) fireBlock).callSetFlammable(block, 30, 20);
+			}
 		}
 	}
 

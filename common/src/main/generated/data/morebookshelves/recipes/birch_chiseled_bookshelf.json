@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "minecraft:birch_planks"
+    },
+    "S": {
+      "item": "minecraft:birch_slab"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "SSS",
+    "PPP"
+  ],
+  "result": {
+    "item": "morebookshelves:birch_chiseled_bookshelf"
+  },
+  "show_notification": true
+}

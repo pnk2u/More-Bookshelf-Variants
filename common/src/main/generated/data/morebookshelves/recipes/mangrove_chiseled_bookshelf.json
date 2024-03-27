@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "S": {
+      "item": "minecraft:mangrove_slab"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "SSS",
+    "PPP"
+  ],
+  "result": {
+    "item": "morebookshelves:mangrove_chiseled_bookshelf"
+  },
+  "show_notification": true
+}
