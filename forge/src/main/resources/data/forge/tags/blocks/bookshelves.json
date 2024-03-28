@@ -1,15 +1,1 @@
-{
-	"replace": false,
-	"values": [
-		"morebookshelves:jungle_bookshelf",
-		"morebookshelves:cherry_bookshelf",
-		"morebookshelves:warped_bookshelf",
-		"morebookshelves:acacia_bookshelf",
-		"morebookshelves:crimson_bookshelf",
-		"morebookshelves:bamboo_bookshelf",
-		"morebookshelves:dark_oak_bookshelf",
-		"morebookshelves:mangrove_bookshelf",
-		"morebookshelves:spruce_bookshelf",
-		"morebookshelves:birch_bookshelf"
-	]
-}
+../../../../../../../../common/src/main/generated/data/c/tags/blocks/bookshelves.json
