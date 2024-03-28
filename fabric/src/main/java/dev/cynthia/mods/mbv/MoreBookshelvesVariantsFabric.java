@@ -9,12 +9,10 @@
 
 package dev.cynthia.mods.mbv;
 
-import com.mojang.datafixers.types.Type;
 import dev.cynthia.mods.mbv.core.Bookshelves;
 import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.Util;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -22,8 +20,6 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.ChiseledBookShelfBlockEntity;
 
@@ -59,6 +55,10 @@ public class MoreBookshelvesVariantsFabric implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(content -> {
 			Block[] bookshelves = new Block[Bookshelves.BOOKSHELVES.size()];
 			content.addAfter(Items.BOOKSHELF, Bookshelves.BOOKSHELVES.values().toArray(bookshelves));
+			content.addAfter(Items.CHISELED_BOOKSHELF, ChiseledBookshelves.CHISELED_BOOKSHELVES.values().toArray(chiseledBookshelves));
+		});
+
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(content -> {
 			content.addAfter(Items.CHISELED_BOOKSHELF, ChiseledBookshelves.CHISELED_BOOKSHELVES.values().toArray(chiseledBookshelves));
 		});
 	}

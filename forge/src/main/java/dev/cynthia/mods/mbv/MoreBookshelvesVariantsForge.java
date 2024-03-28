@@ -63,7 +63,6 @@ public class MoreBookshelvesVariantsForge {
 
 	@SubscribeEvent
 	public void buildCreativeTab(BuildCreativeModeTabContentsEvent event) {
-		// Add to ingredients tab
 		if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			ItemStack before = new ItemStack(Items.BOOKSHELF);
 			for (Block bookshelf : Bookshelves.BOOKSHELVES.values()) {
@@ -73,6 +72,15 @@ public class MoreBookshelvesVariantsForge {
 			}
 
 			before = new ItemStack(Items.CHISELED_BOOKSHELF);
+			for (Block bookshelf : ChiseledBookshelves.CHISELED_BOOKSHELVES.values()) {
+				ItemStack stack = new ItemStack(bookshelf);
+				event.getEntries().putAfter(before, stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+				before = stack;
+			}
+		}
+
+		if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+			ItemStack before = new ItemStack(Items.CHISELED_BOOKSHELF);
 			for (Block bookshelf : ChiseledBookshelves.CHISELED_BOOKSHELVES.values()) {
 				ItemStack stack = new ItemStack(bookshelf);
 				event.getEntries().putAfter(before, stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
