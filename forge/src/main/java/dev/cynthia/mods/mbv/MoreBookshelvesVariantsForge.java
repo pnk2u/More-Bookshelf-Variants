@@ -11,6 +11,8 @@ package dev.cynthia.mods.mbv;
 
 import dev.cynthia.mods.mbv.core.Bookshelves;
 import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
+import dev.cynthia.mods.mbv.platform.PlatformServices;
+import net.mehvahdjukaar.every_compat.api.EveryCompatAPI;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -31,6 +33,10 @@ public class MoreBookshelvesVariantsForge {
 
 	public MoreBookshelvesVariantsForge() {
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
+
+		if (PlatformServices.PLATFORM.isModLoaded("everycomp")) {
+			EveryCompatAPI.registerModule(new EveryCompatModule());
+		}
 	}
 
 	@SubscribeEvent

@@ -8,8 +8,7 @@
 		"${mod_author}"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/LieOnLion/More-Bookshelf-Variants"
 	},
 	"license": "${license}",
 	"icon": "${mod_id}.png",
@@ -33,6 +32,6 @@
 		"java": ">=17"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"everycomp": "*"
 	}
 }

@@ -11,8 +11,10 @@ package dev.cynthia.mods.mbv;
 
 import dev.cynthia.mods.mbv.core.Bookshelves;
 import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
+import dev.cynthia.mods.mbv.platform.PlatformServices;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.mehvahdjukaar.every_compat.api.EveryCompatAPI;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -61,5 +63,9 @@ public class MoreBookshelvesVariantsFabric implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(content -> {
 			content.addAfter(Items.CHISELED_BOOKSHELF, ChiseledBookshelves.CHISELED_BOOKSHELVES.values().toArray(chiseledBookshelves));
 		});
+
+		if (PlatformServices.PLATFORM.isModLoaded("everycomp")) {
+			EveryCompatAPI.registerModule(new EveryCompatModule());
+		}
 	}
 }

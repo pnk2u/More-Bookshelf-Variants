@@ -1,0 +1,1 @@
+../../../../../../../../fabric/src/main/java/dev/cynthia/mods/mbv/EveryCompatModule.java

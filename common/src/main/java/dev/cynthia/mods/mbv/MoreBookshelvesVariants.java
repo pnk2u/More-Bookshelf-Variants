@@ -18,7 +18,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
-import net.minecraft.world.level.block.entity.BlockEntity;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

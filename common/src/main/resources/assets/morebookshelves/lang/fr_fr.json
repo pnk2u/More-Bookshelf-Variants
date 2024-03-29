@@ -20,5 +20,8 @@
 	"block.morebookshelves.cherry_chiseled_bookshelf": "Bibliothèque sculptée en cerisier",
 	"block.morebookshelves.bamboo_chiseled_bookshelf": "Bibliothèque sculptée en bambou",
 	"block.morebookshelves.crimson_chiseled_bookshelf": "Bibliothèque sculptée carmin",
-	"block.morebookshelves.warped_chiseled_bookshelf": "Bibliothèque sculptée biscornue "
+	"block.morebookshelves.warped_chiseled_bookshelf": "Bibliothèque sculptée biscornue",
+
+	"block_type.morebookshelves.bookshelf": "Bibliothèque en %s",
+	"block_type.morebookshelves.chiseled_bookshelf": "Bibliothèque sculptée en %s"
 }

@@ -122,7 +122,7 @@ public class ModelProvider extends FabricModelProvider {
 			Block bookshelf = ChiseledBookshelves.CHISELED_BOOKSHELVES.get(location);
 			addChiseledBookshelfBlock(location, bookshelf, blockStateModelGenerator);
 			addChiseledBookshelfInventory(location, bookshelf, blockStateModelGenerator);
-			addChiseledBookshelfBlockStates(location, bookshelf, blockStateModelGenerator);
+			addChiseledBookshelfBlockStates(bookshelf, blockStateModelGenerator);
 		}
 	}
 
@@ -147,7 +147,7 @@ public class ModelProvider extends FabricModelProvider {
 		CHISELED_BOOKSHELF_INVENTORY_TEMPLATE.create(modelLoc, mapping, blockStateModelGenerator.modelOutput);
 	}
 
-	private void addChiseledBookshelfBlockStates(ResourceLocation loc, Block block, BlockModelGenerators blockStateModelGenerator) {
+	private void addChiseledBookshelfBlockStates(Block block, BlockModelGenerators blockStateModelGenerator) {
 		ResourceLocation resourceLocation = ModelLocationUtils.getModelLocation(block);
 		MultiPartGenerator multiPartGenerator = MultiPartGenerator.multiPart(block);
 
@@ -205,3 +205,49 @@ public class ModelProvider extends FabricModelProvider {
 	record ModelCacheKey(ModelTemplate template, String modelSuffix) {
 	}
 }
+
+/*
+
+ceaa71,c29d62,9f844d,967441,b8945f,af8f55
+
+ceaa71,c29d62,9f844d,b8945f,af8f55,967441
+
+
+                     444444 555555 222222        666666 333333
+7d6739,887143,846d40,b8945f,af8f55,c29d62,7e6237,967441,9f844d OAK
+
+7d6739,887143,846d40,b8945f,af8f55,c29d62,7e6237,967441,9f844d
+
+cca66c,b38c51,9f844d,7c623e,bc9862,9b7742
+
+111111        555555 666666 222222        444444 333333
+
+       111111 555555               444444 666666 333333 222222
+ceaa70,cca76d,b8945f,af8f55,c29d62,7e6237,967441,9f844d,b38c51 OAK
+9f733b,9b703b,82613a,7a5a34,886539,5a4424,614b2e,70522e,755832 SPRUCE
+e1d69d,dfd499,d7c185,c8b77a,d7cb8d,a59467,ae9f76,b8a875,cfc27b BIRCH
+cb9b78,c99875,b88764,aa7954,bf8e6b,      ,976a44,9f714a,b6815a JUNGLE
+ce7a4d,cc774a,ba6337,ad5d32,c26d3f,8f4c2a,99502b,a05630,af6239 ACACIA
+6a451d,65431c,4f3218,492f17,53381a,301e0e,3a2411,3e2912,3f2b14 DARK_OAK
+964836,914736,773934,6f2a2d,7f4234,      ,5d1c1e,642423,6c392d MANGROVE
+efd6cc,eed3c9,e7beb4,e6b5ad,e7c7bb,cd8580,dd9d97,e1a8a1,e0b8a9 CHERRY
+ac416c,a74069,863e5a,7e3a56,943f61,4b2737,5c3042,6a344b,813855 CRIMSON
+37b6a7,37b1a3,3a8e8c,398382,369d91,1f5752,2e5f51,287067,30897f WARPED
+
+
+c09d62,ae8e52,3e4453,495065,b99558,a2804b,997c43,252c3d,5b647c,917541,c5a469
+
+19130a,1d170d,271e11,41311a,604a2c
+
+745a36,4c3d26,917142,382b18,5f4a2b,987849
+
+2e1c0a
+
+
+	spruce_5: #4e351c;
+	spruce_4: #2e1f11;
+	spruce_3: #120c06;
+	spruce_2: #070502;
+	spruce_1: #030201;
+
+ */

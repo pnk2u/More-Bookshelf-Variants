@@ -9,6 +9,22 @@ base {
 	archivesName = "${mod_id}-forge-${minecraft_version}"
 }
 
+repositories {
+	exclusiveContent {
+		forRepositories(fg.repository)
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+}
+
 mixin {
 	add(sourceSets.main, "${mod_id}.refmap.json")
 
@@ -70,6 +86,8 @@ dependencies {
 	minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 	annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
 
+	implementation fg.deobf("maven.modrinth:every-compat:${wood_good_version}-forge")
+	implementation fg.deobf("maven.modrinth:moonlight:forge_${moonlight_version}")
 	compileOnly project(":common")
 }
 

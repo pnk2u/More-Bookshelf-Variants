@@ -20,5 +20,8 @@
 	"block.morebookshelves.cherry_chiseled_bookshelf": "Chiseled Cherry Bookshelf",
 	"block.morebookshelves.bamboo_chiseled_bookshelf": "Chiseled Bamboo Bookshelf",
 	"block.morebookshelves.crimson_chiseled_bookshelf": "Chiseled Crimson Bookshelf",
-	"block.morebookshelves.warped_chiseled_bookshelf": "Chiseled Warped Bookshelf"
+	"block.morebookshelves.warped_chiseled_bookshelf": "Chiseled Warped Bookshelf",
+
+	"block_type.morebookshelves.bookshelf": "%s Bookshelf",
+	"block_type.morebookshelves.chiseled_bookshelf": "Chiseled %s Bookshelf"
 }
