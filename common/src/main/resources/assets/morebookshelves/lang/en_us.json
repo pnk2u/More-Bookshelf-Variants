@@ -1,5 +1,4 @@
 {
-	"block.minecraft.bookshelf": "Oak Bookshelf",
 	"block.morebookshelves.spruce_bookshelf": "Spruce Bookshelf",
 	"block.morebookshelves.birch_bookshelf": "Birch Bookshelf",
 	"block.morebookshelves.jungle_bookshelf": "Jungle Bookshelf",
@@ -10,7 +9,6 @@
 	"block.morebookshelves.bamboo_bookshelf": "Bamboo Bookshelf",
 	"block.morebookshelves.crimson_bookshelf": "Crimson Bookshelf",
 	"block.morebookshelves.warped_bookshelf": "Warped Bookshelf",
-	"block.minecraft.chiseled_bookshelf": "Chiseled Oak Bookshelf",
 	"block.morebookshelves.spruce_chiseled_bookshelf": "Chiseled Spruce Bookshelf",
 	"block.morebookshelves.birch_chiseled_bookshelf": "Chiseled Birch Bookshelf",
 	"block.morebookshelves.jungle_chiseled_bookshelf": "Chiseled Jungle Bookshelf",
@@ -21,7 +19,6 @@
 	"block.morebookshelves.bamboo_chiseled_bookshelf": "Chiseled Bamboo Bookshelf",
 	"block.morebookshelves.crimson_chiseled_bookshelf": "Chiseled Crimson Bookshelf",
 	"block.morebookshelves.warped_chiseled_bookshelf": "Chiseled Warped Bookshelf",
-
 	"block_type.morebookshelves.bookshelf": "%s Bookshelf",
 	"block_type.morebookshelves.chiseled_bookshelf": "Chiseled %s Bookshelf"
 }

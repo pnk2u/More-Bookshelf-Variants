@@ -24,6 +24,10 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ChiseledBookShelfBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+// Module is currently placed in both Forge and Fabric folders since VanillaGradle doesn't support deobfuscation on-fly
+// EveryCompat would need to publish a mojmap build the common project could depend on, which it doesn't
+// As a "hack" the module is placed in both projects using a symlink to avoid actually duped code
+
 public class EveryCompatModule extends SimpleModule {
 	private final static WoodType SPRUCE_TYPE = new WoodType(new ResourceLocation("spruce"), Blocks.SPRUCE_PLANKS, Blocks.SPRUCE_LOG);
 
