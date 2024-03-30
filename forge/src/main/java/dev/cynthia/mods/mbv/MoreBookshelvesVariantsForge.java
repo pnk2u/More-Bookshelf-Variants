@@ -9,8 +9,8 @@
 
 package dev.cynthia.mods.mbv;
 
-import dev.cynthia.mods.mbv.core.Bookshelves;
-import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
+import dev.cynthia.mods.mbv.blocks.Bookshelves;
+import dev.cynthia.mods.mbv.blocks.ChiseledBookshelves;
 import dev.cynthia.mods.mbv.platform.PlatformServices;
 import net.mehvahdjukaar.every_compat.api.EveryCompatAPI;
 import net.minecraft.resources.ResourceLocation;

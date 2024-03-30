@@ -7,7 +7,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-package dev.cynthia.mods.mbv.core;
+package dev.cynthia.mods.mbv.blocks;
 
 import dev.cynthia.mods.mbv.Constants;
 import net.minecraft.resources.ResourceLocation;

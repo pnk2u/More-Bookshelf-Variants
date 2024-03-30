@@ -9,8 +9,8 @@
 
 package dev.cynthia.mods.mbv;
 
-import dev.cynthia.mods.mbv.core.Bookshelves;
-import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
+import dev.cynthia.mods.mbv.blocks.Bookshelves;
+import dev.cynthia.mods.mbv.blocks.ChiseledBookshelves;
 import dev.cynthia.mods.mbv.mixin.FireBlockInvoker;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;

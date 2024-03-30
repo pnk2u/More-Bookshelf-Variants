@@ -9,8 +9,8 @@
 
 package dev.cynthia.mods.mbv.datagen;
 
-import dev.cynthia.mods.mbv.core.Bookshelves;
-import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
+import dev.cynthia.mods.mbv.blocks.Bookshelves;
+import dev.cynthia.mods.mbv.blocks.ChiseledBookshelves;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.world.item.Items;

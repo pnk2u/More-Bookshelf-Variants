@@ -9,8 +9,8 @@
 
 package dev.cynthia.mods.mbv;
 
-import dev.cynthia.mods.mbv.core.Bookshelves;
-import dev.cynthia.mods.mbv.core.ChiseledBookshelves;
+import dev.cynthia.mods.mbv.blocks.Bookshelves;
+import dev.cynthia.mods.mbv.blocks.ChiseledBookshelves;
 import dev.cynthia.mods.mbv.platform.PlatformServices;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
