@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "lolmbv:more_bookshelf"
+    }
+  ],
+  "result": {
+    "item": "minecraft:bookshelf"
+  }
+}
