@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "io.github.lieonlion.lolmbv.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "lolmbv.refmap.json",
+  "mixins": [
+    "FireBlockInvoker"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
