@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "minecraft:jungle_planks"
+              "minecraft:oak_planks"
             ]
           }
         ]
@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmbv:jungle_bookshelf"
+        "recipe": "minecraft:bookshelf"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -44,7 +44,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmbv:jungle_bookshelf"
+      "minecraft:bookshelf"
     ]
   },
   "sends_telemetry_event": false
