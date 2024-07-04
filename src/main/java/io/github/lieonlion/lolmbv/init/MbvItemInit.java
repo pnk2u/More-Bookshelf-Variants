@@ -33,7 +33,7 @@ public class MbvItemInit {
     }
 
     public static void registerItem(String name, Item item, Item after) {
-        Registry.register(Registries.ITEM, new Identifier(MoreBookshelfVariants.MODID, name), item);
+        Registry.register(Registries.ITEM, Identifier.of(MoreBookshelfVariants.MODID, name), item);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> entries.addAfter(after, item));
     }
 }

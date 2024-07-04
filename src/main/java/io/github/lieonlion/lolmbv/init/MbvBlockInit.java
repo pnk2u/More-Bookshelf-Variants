@@ -35,6 +35,6 @@ public class MbvBlockInit {
     }
 
     private static void registerBlock(String name, Block block) {
-        Registry.register(Registries.BLOCK, new Identifier(MoreBookshelfVariants.MODID, name), block);
+        Registry.register(Registries.BLOCK, Identifier.of(MoreBookshelfVariants.MODID, name), block);
     }
 }
